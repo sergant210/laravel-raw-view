@@ -1,0 +1,38 @@
+{
+    "name": "sergant210/laravel-raw-view",
+    "type": "library",
+    "description": "It's intended to compile raw blade expressions. You don't need to make a view.",
+    "keywords": ["laravel", "rawview", "view", "blade"],
+    "homepage": "https://github.com/sergant210/RawView",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Sergey Shlokov",
+            "email": "sergant210@bk.ru",
+            "homepage": "https://modzone.ru"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sergant210/RawView/issues"
+    },
+    "require": {
+        "php" : "~7.0",
+        "illuminate/events": "~5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sergant210\\RawView\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "sort-packages": true
+    }
+}
