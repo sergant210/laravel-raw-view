@@ -1,7 +1,7 @@
 {
     "name": "sergant210/laravel-raw-view",
     "type": "library",
-    "description": "It's intended to compile raw blade expressions. You don't need to make a view.",
+    "description": "It's intended to compile a view from the HTML string 'on the fly'. You don't need to create a view file.",
     "keywords": ["laravel", "rawview", "view", "blade"],
     "homepage": "https://github.com/sergant210/RawView",
     "license": "MIT",

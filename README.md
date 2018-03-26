@@ -1,6 +1,6 @@
 # RawView
 
-RawView gives an ability to use raw HTML code with Blade directives without creating a view file.
+RawView gives an ability to compile a view from the raw HTML code with Blade directives without creating a view file.
 
 ## Install
 
