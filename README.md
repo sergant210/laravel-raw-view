@@ -1,6 +1,6 @@
 # RawView
 
-RawView gives an ability to compile a view from the raw HTML code with Blade directives without creating a view file.
+RawView for Laravel 5.5+ gives an ability to compile a view from the raw HTML code with Blade directives without creating a view file.
 
 ## Install
 
