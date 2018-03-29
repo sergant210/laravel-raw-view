@@ -14,12 +14,22 @@ After that the view_raw function will be available. It works like the view funct
 ## Usage
 
 ``` php
-$output = '';
-$tpl = '<li> {{ $item["name"] }} </li>';
-foreach($items as $item) {
-    $output .= view_raw($tpl, compact('item'))->render();
+class Item
+{
+	public $tpl = '<li class="{{ $item->makeClasses() }}"> {{ $item->name }}';
+	...
+	public function render()
+	{
+	    return view_raw($this->tpl, ['item' => $this])->render();
+	}
 }
-$output = '<ul>' . $output . '</ul>';
+
+// View
+<ul>
+@foreach($items as $item)
+    {!! $item->render() !!}
+@endforeach
+</ul>
 ```
 
 ## Change log
