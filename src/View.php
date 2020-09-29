@@ -1,6 +1,6 @@
 <?php
 
-namespace Sergant210\RawView;
+namespace RawView;
 
 use Illuminate\View\View as BaseView;
 

@@ -1,10 +1,8 @@
 <?php
 
-namespace Sergant210\RawView;
+namespace RawView;
 
 use Illuminate\View\Compilers\BladeCompiler;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
 
 class RawBladeCompiler extends BladeCompiler
 {

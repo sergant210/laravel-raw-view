@@ -1,8 +1,7 @@
 <?php
 
-namespace Sergant210\RawView;
+namespace RawView;
 
-use Exception;
 use Illuminate\View\Engines\CompilerEngine;
 
 class RawCompilerEngine extends CompilerEngine
@@ -33,10 +32,10 @@ class RawCompilerEngine extends CompilerEngine
     /**
      * Get the exception message for an exception.
      *
-     * @param  \Exception  $e
+     * @param  \Throwable  $e
      * @return string
      */
-    protected function getMessage(Exception $e)
+    protected function getMessage(\Throwable $e)
     {
         return $e->getMessage() . ' (View template: ' . last($this->lastCompiled).')';
     }

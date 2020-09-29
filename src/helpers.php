@@ -1,14 +1,14 @@
 <?php
 
-use Sergant210\RawView\View;
+use RawView\View;
 
 if (! function_exists('view_raw')) {
     /**
      * Get the evaluated view contents for the given raw expression.
      *
-     * @param  string  $view Raw expression.
+     * @param  string  $view Html code.
      * @param  array   $data
-     * @return \Sergant210\RawView\View
+     * @return RawView\View
      */
     function view_raw($view, $data = [])
     {
